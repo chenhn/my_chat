@@ -43,7 +43,7 @@ WORKDIR /root/
 
 # 复制部署内容
 COPY --from=golang-builder /go/src/my_chat/app .
-COPY --from=golang-builder /go/src/my_chat/docs ./docs
+# COPY --from=golang-builder /go/src/my_chat/docs ./docs
 # 仅当程序中包含静态模板文件时进行复制
 # COPY --from=golang-builder /go/src/code.meikeland.com/dh/partner_platform/template ./template
 
